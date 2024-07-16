@@ -1,0 +1,22 @@
+.header{
+    padding: $padding-big 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    &__logo{ max-width: 300px;
+    }
+
+    &__login{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: $margin-regular;
+
+        &-link{
+            font-weight: $font-wg-medium;
+            &--hl{ font-weight: $font-wg-bold;
+            }
+        }
+    }
+}

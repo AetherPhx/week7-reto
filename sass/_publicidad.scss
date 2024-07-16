@@ -1,0 +1,26 @@
+.publicidad{
+    color: $color-sec;
+
+    &__title{ 
+        margin-bottom: $margin-big;
+        color: inherit;
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $margin-regular;
+    }
+
+    // &__photo{
+    // }
+
+    // &__info{
+    // }
+
+    &__text{ margin: 0;
+    }
+
+    &__button{ margin-top: $margin-small;
+    }
+}

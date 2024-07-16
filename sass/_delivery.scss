@@ -1,0 +1,55 @@
+.delivery{
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: $margin-big;
+        
+    
+    &__container{
+        background-color: $color-main;
+        padding: $padding-big;
+        color: $color-white;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+    }
+
+    &__title{ 
+        margin-bottom: $margin-big;
+        color: $color-white;
+    }
+    
+    &__form{
+        // display: flex;
+        // flex-flow: column nowrap;
+        // justify-content: space-evenly;
+        // gap: 10px;
+
+        &-field{ margin-bottom: $margin-small;
+        }
+        &-label{
+            margin: $margin-small 0;
+            display: block;
+            color: $color-white;
+        }
+
+        &-input{
+            background-color: $color-white;
+            width: 100%;
+            padding: $padding-small;
+            border: none;
+        }
+
+        &-submit{
+            background-color: $color-sec;
+            width: 100%;
+            margin-top: $margin-regular;
+        }
+
+    }
+
+    // &__img{
+    // }
+}

@@ -1,0 +1,48 @@
+html{ font-family: $font-fm-main;
+}
+
+h1, h2{ 
+    font-size: $font-sz-giant;
+    color: $color-black;
+}
+h3{ font-size: $font-sz-large;
+}
+
+p, span, a{
+    font-size: $font-sz-medium;
+    font-weight: $font-wg-light;
+    color: $color-sec;
+}
+p{ margin-top: $margin-regular;
+}
+a{ color: $color-black;
+}
+
+label, input{
+    font-size: $font-sz-small;
+    font-weight: $font-wg-light;
+}
+
+button, .btn{
+    background-color: $color-main;
+    padding: $padding-small $padding-regular;
+    border: none;
+    border-radius: $border-radius;
+
+    color: $color-white;
+    cursor: pointer;
+    font-size: $font-sz-medium;
+    font-weight: $font-wg-bold;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: $margin-big;
+}
+
+.centered-wrapper{
+    padding: $padding-big 0;
+    max-width: $width-main;
+    margin: 0 auto;
+}

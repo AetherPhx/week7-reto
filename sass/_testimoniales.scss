@@ -1,0 +1,67 @@
+.testimoniales{
+    &__title{ margin-bottom: $margin-big;
+    }
+
+    &__cards{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: $margin-regular;
+
+        grid-template-areas:
+        "card1 card1 card1 card2 card3"
+        "card4 card4 card5 card5 card3";
+    }
+        
+    &__card{
+        background-color: $color-sec;
+        padding: $padding-small--plus;
+        border-radius: $border-radius;
+        color: $color-white;
+
+        &-header{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            gap: $margin-small;
+            
+            &--vertical{
+                flex-flow: column nowrap;
+                align-items: center;
+                
+                h3{ text-align: center;
+                }
+            }
+        }
+        &-photo{
+            max-width: 100px;
+            border-radius: 50%;
+            // flex: 1 1 4rem;
+        }
+
+        &-container{ // * Name & Stars Container
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        &-name{ margin: calc($margin-small / 2) 0;
+        }
+
+        &-text{ 
+            padding-left: $padding-regular;
+            color: $color-white;
+        }
+    }
+
+    &-card{ // *Posicionamiento de cada tarjeta
+        &-1{ grid-area: card1;
+        }
+        &-2{ grid-area: card2;
+        }
+        &-3{ grid-area: card3;
+        }
+        &-4{ grid-area: card4;
+        }
+        &-5{ grid-area: card5;
+        }
+    }
+}

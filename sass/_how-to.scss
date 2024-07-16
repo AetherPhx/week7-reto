@@ -1,0 +1,17 @@
+.how-to{
+    background-color: $color-main;
+
+    &__title{ 
+        line-height: .7;
+        color: $color-white;
+    }
+    &__subtitle{
+        font-size: $font-sz-small;
+        color: $color-white;
+    }
+
+    &__steps{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
